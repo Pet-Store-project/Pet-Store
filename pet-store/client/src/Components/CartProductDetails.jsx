@@ -13,7 +13,7 @@ const CartProductDetails = ({ selectedProduct, remove }) => {
             <h3 className="flaticon-house display-3 font-weight-normal text-secondary mb-3">
                 <img src={selectedProduct.imageUrl} alt="" /></h3>
             <h3 className="mb-3">{selectedProduct.name}</h3>
-            <p>{selectedProduct.description.substring(0, 93)}...</p>
+            <p>{selectedProduct.description}</p>
             <p>${selectedProduct.price}</p>
 
             <button className="remove text-uppercase font-weight-bold btn-dark" href="" onClick={(e) => { e.preventDefault(); remove(user.userId, selectedProduct.id) }}>Remove</button>
